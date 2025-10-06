@@ -5,328 +5,378 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3 Günlük FST-7 Antrenman Programı</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #1a1a1a;
-            color: #e5e7eb;
-            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f4f4f4;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
         }
         .table-header {
-            background-color: #2d2d2d;
+            background: linear-gradient(90deg, #00f6ff, #ff00ff);
             color: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
         .table-row:nth-child(even) {
-            background-color: #252525;
+            background-color: #1f1f1f;
         }
         .table-row:hover {
-            background-color: #3b3b3b;
+            background-color: #2a2a2a;
+            transition: background-color 0.3s ease;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
             padding: 2rem;
         }
-        h1, h2 {
+        h1 {
+            font-size: 3rem;
             font-weight: 700;
-            color: #60a5fa;
+            background: linear-gradient(90deg, #00f6ff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            margin-bottom: 1rem;
+            animation: gradientShift 5s ease infinite;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            background: linear-gradient(90deg, #00f6ff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+        .section-box {
+            background-color: #151515;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0, 246, 255, 0.2);
+            margin-bottom: 2rem;
+        }
+        .table-container {
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 246, 255, 0.2);
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #00f6ff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
 <body>
     <div class="container mx-auto px-4 py-8">
-        <h1 class="text-4xl font-bold text-center mb-4">3 Günlük FST-7 Antrenman Programı</h1>
-        <p class="text-lg text-center mb-8 italic">Kas Hipertrofisi için Optimize Edilmiş Split</p>
+        <h1>3 Günlük FST-7 Antrenman Programı</h1>
+        <p class="text-lg text-center mb-8 italic gradient-text">Kas Hipertrofisi için Optimize Edilmiş Split</p>
 
-        <p class="text-base mb-6">Bu program, kas hipertrofisini maksimize etmek için FST-7 (Fasya Esnetme Antrenmanı-7) prensiplerine dayanıyor. Haftada 3 gün (Pazartesi-Çarşamba-Cuma), Push-Pull-Legs (PPL) spliti ile kas grupları dengeli çalıştırılır. Her kas grubu haftada bir kez, yüksek hacimle (~20-30 set) hedeflenir; bu, hipertrofi için bilimsel olarak optimaldir (Schoenfeld, 2010). FST-7 setleri (7 set, hafif kilo, kısa dinlenme), metabolik stres ve fasya esnetme ile kas büyümesini destekler. Omuzlar, bacaklar gününe entegre edildi; göğüs-triceps (Push) ve sırt-biceps (Pull) ayrı günlerde çalıştırılır. Antrenman süresi/gün: 60-75 dakika. <strong>Beslenme:</strong> Protein 1.6-2.2 g/kg, kalori fazlası. <strong>Uyku:</strong> 7-9 saat. <strong>Progresyon:</strong> Haftalık %5-10 ağırlık artışı.</p>
+        <div class="section-box">
+            <p class="text-base mb-6">Bu program, kas hipertrofisini maksimize etmek için FST-7 (Fasya Esnetme Antrenmanı-7) prensiplerine dayanıyor. Haftada 3 gün (Pazartesi-Çarşamba-Cuma), Push-Pull-Legs (PPL) spliti ile kas grupları dengeli çalıştırılır. Her kas grubu haftada bir kez, yüksek hacimle (~20-30 set) hedeflenir; bu, hipertrofi için bilimsel olarak optimaldir (Schoenfeld, 2010). FST-7 setleri (7 set, hafif kilo, kısa dinlenme), metabolik stres ve fasya esnetme ile kas büyümesini destekler. Omuzlar, bacaklar gününe entegre edildi; göğüs-triceps (Push) ve sırt-biceps (Pull) ayrı günlerde çalıştırılır. Antrenman süresi/gün: 60-75 dakika. <strong>Beslenme:</strong> Protein 1.6-2.2 g/kg, kalori fazlası. <strong>Uyku:</strong> 7-9 saat. <strong>Progresyon:</strong> Haftalık %5-10 ağırlık artışı.</p>
+        </div>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">Gün 1: Push (Göğüs, Triceps)</h2>
+        <section class="section-box">
+            <h2>Gün 1: Push (Göğüs, Triceps)</h2>
             <p class="mb-2"><strong>Neden Birlikte Çalıştırılır?</strong> Göğüs ve triceps, itme hareketlerinde sinerjik çalışır (örneğin, bench press). PPL splitinde standarttır ve hipertrofi için etkilidir (Gentil et al., 2015).</p>
             <p class="mb-2"><strong>Hipertrofi İçin Önem:</strong> Göğüs (üst/orta) ve triceps için yüksek hacim, üst vücut estetiği ve gücünü artırır. FST-7 setleri, kan akışı ve metabolik stresle büyümeyi tetikler (Schoenfeld, 2013).</p>
             <p class="mb-2"><strong>Yorgunluk Avantajları/Dezavantajları:</strong> <em>Avantaj:</em> Kas grupları arasında sinerji, toparlanmayı hızlandırır (48-72 saat). <em>Dezavantaj:</em> FST-7 setlerinin yüksek hacmi, triceps eklemlerinde stres yaratabilir; hafif kilolarla risk azalır.</p>
             <p class="mb-4"><strong>Toplam Set:</strong> ~25.</p>
-            <div class="overflow-x-auto">
-                <table class="w-full text-sm text-left border border-gray-700">
-                    <thead class="table-header">
-                        <tr>
-                            <th class="px-4 py-2">Hareket</th>
-                            <th class="px-4 py-2">Kas Grubu</th>
-                            <th class="px-4 py-2">Set x Tekrar</th>
-                            <th class="px-4 py-2">Dinlenme</th>
-                            <th class="px-4 py-2">Açıklama</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Incline Hammer Strength Press</td>
-                            <td class="px-4 py-2">Göğüs (Üst)</td>
-                            <td class="px-4 py-2">4 x 8-12</td>
-                            <td class="px-4 py-2">90-120 sn</td>
-                            <td class="px-4 py-2">Üst göğüs kütlesi için bileşik hareket.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Dumbbell Incline Chest Press</td>
-                            <td class="px-4 py-2">Göğüs (Üst)</td>
-                            <td class="px-4 py-2">3 x 8-12</td>
-                            <td class="px-4 py-2">90 sn</td>
-                            <td class="px-4 py-2">Üst göğüs izolasyonu, stabilizatör kasları güçlendirir.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Flat Bench Dumbbell Press</td>
-                            <td class="px-4 py-2">Göğüs (Orta)</td>
-                            <td class="px-4 py-2">3 x 8-12</td>
-                            <td class="px-4 py-2">90 sn</td>
-                            <td class="px-4 py-2">Orta göğüs kütlesi için temel hareket.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Cable Flyes (3 açılı: üst 5, alt 5, orta 5, son tekrar tepe noktada sıkma)</td>
-                            <td class="px-4 py-2">Göğüs (Tam)</td>
-                            <td class="px-4 py-2">3 x 8-12</td>
-                            <td class="px-4 py-2">60 sn</td>
-                            <td class="px-4 py-2">Göğüs iç kısmı için izolasyon, maksimum kasılma.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Smith Incline Press (FST-7)</td>
-                            <td class="px-4 py-2">Göğüs (Üst)</td>
-                            <td class="px-4 py-2">7 x 8-12</td>
-                            <td class="px-4 py-2">30-45 sn</td>
-                            <td class="px-4 py-2">Hafif kilo, yoğun kas dolgunluğu, fasya esnetme.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Cable Pushdowns</td>
-                            <td class="px-4 py-2">Triceps</td>
-                            <td class="px-4 py-2">3 x 10</td>
-                            <td class="px-4 py-2">60 sn</td>
-                            <td class="px-4 py-2">Triceps izolasyonu, sürekli gerilim.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Close Grip Bench Press</td>
-                            <td class="px-4 py-2">Triceps</td>
-                            <td class="px-4 py-2">3 x 10</td>
-                            <td class="px-4 py-2">90 sn</td>
-                            <td class="px-4 py-2">Triceps kütlesi için bileşik hareket.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Skull Crusher</td>
-                            <td class="px-4 py-2">Triceps</td>
-                            <td class="px-4 py-2">3 x 10</td>
-                            <td class="px-4 py-2">60 sn</td>
-                            <td class="px-4 py-2">Triceps uzun baş izolasyonu.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Triceps Extension (Seated, two-hand single dumbbell, FST-7)</td>
-                            <td class="px-4 py-2">Triceps</td>
-                            <td class="px-4 py-2">7 x 10</td>
-                            <td class="px-4 py-2">30 sn</td>
-                            <td class="px-4 py-2">Hafif kilo, yoğun kas dolgunluğu, triceps finali.</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="table-container">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="table-header">
+                            <tr>
+                                <th class="px-4 py-3">Hareket</th>
+                                <th class="px-4 py-3">Kas Grubu</th>
+                                <th class="px-4 py-3">Set x Tekrar</th>
+                                <th class="px-4 py-3">Dinlenme</th>
+                                <th class="px-4 py-3">Açıklama</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Incline Hammer Strength Press</td>
+                                <td class="px-4 py-3">Göğüs (Üst)</td>
+                                <td class="px-4 py-3">4 x 8-12</td>
+                                <td class="px-4 py-3">90-120 sn</td>
+                                <td class="px-4 py-3">Üst göğüs kütlesi için bileşik hareket.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Dumbbell Incline Chest Press</td>
+                                <td class="px-4 py-3">Göğüs (Üst)</td>
+                                <td class="px-4 py-3">3 x 8-12</td>
+                                <td class="px-4 py-3">90 sn</td>
+                                <td class="px-4 py-3">Üst göğüs izolasyonu, stabilizatör kasları güçlendirir.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Flat Bench Dumbbell Press</td>
+                                <td class="px-4 py-3">Göğüs (Orta)</td>
+                                <td class="px-4 py-3">3 x 8-12</td>
+                                <td class="px-4 py-3">90 sn</td>
+                                <td class="px-4 py-3">Orta göğüs kütlesi için temel hareket.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Cable Flyes (3 açılı: üst 5, alt 5, orta 5, son tekrar tepe noktada sıkma)</td>
+                                <td class="px-4 py-3">Göğüs (Tam)</td>
+                                <td class="px-4 py-3">3 x 8-12</td>
+                                <td class="px-4 py-3">60 sn</td>
+                                <td class="px-4 py-3">Göğüs iç kısmı için izolasyon, maksimum kasılma.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Smith Incline Press (FST-7)</td>
+                                <td class="px-4 py-3">Göğüs (Üst)</td>
+                                <td class="px-4 py-3">7 x 8-12</td>
+                                <td class="px-4 py-3">30-45 sn</td>
+                                <td class="px-4 py-3">Hafif kilo, yoğun kas dolgunluğu, fasya esnetme.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Cable Pushdowns</td>
+                                <td class="px-4 py-3">Triceps</td>
+                                <td class="px-4 py-3">3 x 10</td>
+                                <td class="px-4 py-3">60 sn</td>
+                                <td class="px-4 py-3">Triceps izolasyonu, sürekli gerilim.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Close Grip Bench Press</td>
+                                <td class="px-4 py-3">Triceps</td>
+                                <td class="px-4 py-3">3 x 10</td>
+                                <td class="px-4 py-3">90 sn</td>
+                                <td class="px-4 py-3">Triceps kütlesi için bileşik hareket.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Skull Crusher</td>
+                                <td class="px-4 py-3">Triceps</td>
+                                <td class="px-4 py-3">3 x 10</td>
+                                <td class="px-4 py-3">60 sn</td>
+                                <td class="px-4 py-3">Triceps uzun baş izolasyonu.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Triceps Extension (Seated, two-hand single dumbbell, FST-7)</td>
+                                <td class="px-4 py-3">Triceps</td>
+                                <td class="px-4 py-3">7 x 10</td>
+                                <td class="px-4 py-3">30 sn</td>
+                                <td class="px-4 py-3">Hafif kilo, yoğun kas dolgunluğu, triceps finali.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">Gün 2: Pull (Sırt, Biceps)</h2>
+        <section class="section-box">
+            <h2>Gün 2: Pull (Sırt, Biceps)</h2>
             <p class="mb-2"><strong>Neden Birlikte Çalıştırılır?</strong> Sırt ve biceps, çekme hareketlerinde sinerjik çalışır (örneğin, row hareketleri). PPL splitinde standarttır, hipertrofi ve estetik için etkilidir (Kraemer & Ratamess, 2004).</p>
             <p class="mb-2"><strong>Hipertrofi İçin Önem:</strong> Sırt genişliği ve kalınlığı ile biceps kütlesi için yüksek hacim, V-taper estetiği sağlar. FST-7 setleri, sırt ve biceps için yoğun kas dolgunluğu yaratır (Schoenfeld, 2013).</p>
             <p class="mb-2"><strong>Yorgunluk Avantajları/Dezavantajları:</strong> <em>Avantaj:</em> Antagonist kas grupları, toparlanmayı iyileştirir (24-48 saat). <em>Dezavantaj:</em> Yüksek hacim, sırt eklemlerinde stres yaratabilir; tepe noktada sıkma ile dengelenir.</p>
             <p class="mb-4"><strong>Toplam Set:</strong> ~25.</p>
-            <div class="overflow-x-auto">
-                <table class="w-full text-sm text-left border border-gray-700">
-                    <thead class="table-header">
-                        <tr>
-                            <th class="px-4 py-2">Hareket</th>
-                            <th class="px-4 py-2">Kas Grubu</th>
-                            <th class="px-4 py-2">Set x Tekrar</th>
-                            <th class="px-4 py-2">Dinlenme</th>
-                            <th class="px-4 py-2">Açıklama</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Lat Pulldown Wide Grip</td>
-                            <td class="px-4 py-2">Sırt (Genişlik)</td>
-                            <td class="px-4 py-2">4 x 10-12</td>
-                            <td class="px-4 py-2">90-120 sn</td>
-                            <td class="px-4 py-2">Latissimus dorsi genişliği, V-taper estetiği.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Low Cable Row Wide Grip</td>
-                            <td class="px-4 py-2">Sırt (Orta)</td>
-                            <td class="px-4 py-2">3 x 10-12</td>
-                            <td class="px-4 py-2">90 sn</td>
-                            <td class="px-4 py-2">Orta sırt kalınlığı için sürekli gerilim.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">T-Bar Row Wide Grip</td>
-                            <td class="px-4 py-2">Sırt (Kalınlık)</td>
-                            <td class="px-4 py-2">3 x 10-12</td>
-                            <td class="px-4 py-2">90 sn</td>
-                            <td class="px-4 py-2">Sırt kütlesi için temel bileşik hareket.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Unilateral Iso Row</td>
-                            <td class="px-4 py-2">Sırt (Tek Taraflı)</td>
-                            <td class="px-4 py-2">3 x 10-12</td>
-                            <td class="px-4 py-2">60 sn</td>
-                            <td class="px-4 py-2">Tek taraflı güç, kas imbalansını düzeltir.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Seated High Rope Pulley Rows (Göğüs altına, tepe noktada sıkma)</td>
-                            <td class="px-4 py-2">Sırt (Üst/Orta)</td>
-                            <td class="px-4 py-2">5 x 10-12</td>
-                            <td class="px-4 py-2">45 sn</td>
-                            <td class="px-4 py-2">Sırt üstü ve detay, sıkma ile kasılma artışı.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Dumbbell Curls</td>
-                            <td class="px-4 py-2">Biceps</td>
-                            <td class="px-4 py-2">3 x 10</td>
-                            <td class="px-4 py-2">60 sn</td>
-                            <td class="px-4 py-2">Biceps kütlesi için çift taraflı çekiş.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">One Arm Preacher Curl</td>
-                            <td class="px-4 py-2">Biceps</td>
-                            <td class="px-4 py-2">3 x 10</td>
-                            <td class="px-4 py-2">60 sn</td>
-                            <td class="px-4 py-2">Biceps tepe noktası için izolasyon.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Spider Curl</td>
-                            <td class="px-4 py-2">Biceps</td>
-                            <td class="px-4 py-2">3 x 10</td>
-                            <td class="px-4 py-2">60 sn</td>
-                            <td class="px-4 py-2">Biceps uzun baş için izole hareket.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Barbell Curls (FST-7)</td>
-                            <td class="px-4 py-2">Biceps</td>
-                            <td class="px-4 py-2">7 x 10</td>
-                            <td class="px-4 py-2">30 sn</td>
-                            <td class="px-4 py-2">Hafif kilo, yoğun kas dolgunluğu, biceps finali.</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="table-container">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="table-header">
+                            <tr>
+                                <th class="px-4 py-3">Hareket</th>
+                                <th class="px-4 py-3">Kas Grubu</th>
+                                <th class="px-4 py-3">Set x Tekrar</th>
+                                <th class="px-4 py-3">Dinlenme</th>
+                                <th class="px-4 py-3">Açıklama</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Lat Pulldown Wide Grip</td>
+                                <td class="px-4 py-3">Sırt (Genişlik)</td>
+                                <td class="px-4 py-3">4 x 10-12</td>
+                                <td class="px-4 py-3">90-120 sn</td>
+                                <td class="px-4 py-3">Latissimus dorsi genişliği, V-taper estetiği.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Low Cable Row Wide Grip</td>
+                                <td class="px-4 py-3">Sırt (Orta)</td>
+                                <td class="px-4 py-3">3 x 10-12</td>
+                                <td class="px-4 py-3">90 sn</td>
+                                <td class="px-4 py-3">Orta sırt kalınlığı için sürekli gerilim.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">T-Bar Row Wide Grip</td>
+                                <td class="px-4 py-3">Sırt (Kalınlık)</td>
+                                <td class="px-4 py-3">3 x 10-12</td>
+                                <td class="px-4 py-3">90 sn</td>
+                                <td class="px-4 py-3">Sırt kütlesi için temel bileşik hareket.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Unilateral Iso Row</td>
+                                <td class="px-4 py-3">Sırt (Tek Taraflı)</td>
+                                <td class="px-4 py-3">3 x 10-12</td>
+                                <td class="px-4 py-3">60 sn</td>
+                                <td class="px-4 py-3">Tek taraflı güç, kas imbalansını düzeltir.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Seated High Rope Pulley Rows (Göğüs altına, tepe noktada sıkma)</td>
+                                <td class="px-4 py-3">Sırt (Üst/Orta)</td>
+                                <td class="px-4 py-3">5 x 10-12</td>
+                                <td class="px-4 py-3">45 sn</td>
+                                <td class="px-4 py-3">Sırt üstü ve detay, sıkma ile kasılma artışı.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Dumbbell Curls</td>
+                                <td class="px-4 py-3">Biceps</td>
+                                <td class="px-4 py-3">3 x 10</td>
+                                <td class="px-4 py-3">60 sn</td>
+                                <td class="px-4 py-3">Biceps kütlesi için çift taraflı çekiş.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">One Arm Preacher Curl</td>
+                                <td class="px-4 py-3">Biceps</td>
+                                <td class="px-4 py-3">3 x 10</td>
+                                <td class="px-4 py-3">60 sn</td>
+                                <td class="px-4 py-3">Biceps tepe noktası için izolasyon.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Spider Curl</td>
+                                <td class="px-4 py-3">Biceps</td>
+                                <td class="px-4 py-3">3 x 10</td>
+                                <td class="px-4 py-3">60 sn</td>
+                                <td class="px-4 py-3">Biceps uzun baş için izole hareket.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Barbell Curls (FST-7)</td>
+                                <td class="px-4 py-3">Biceps</td>
+                                <td class="px-4 py-3">7 x 10</td>
+                                <td class="px-4 py-3">30 sn</td>
+                                <td class="px-4 py-3">Hafif kilo, yoğun kas dolgunluğu, biceps finali.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
 
-        <section class="mb-12">
-            <h2 class="text-2xl font-semibold mb-4">Gün 3: Legs + Shoulders (Bacaklar ve Omuzlar)</h2>
-            <p class="mb-2"><strong>Neden Birlikte Çalıştırılır?</strong> Bacaklar (quadriceps, hamstring, glute), büyük kas grubu olduğu için bağımsız bir gün alır. Omuzlar, bu güne eklenerek tam vücut dengesi sağlanır. PPL splitinde alt vücut ve omuz hipertrofisini optimize eder (Wernbom et al., 2007).</p>
+        <section class="section-box">
+            <h2>Gün 3: Legs + Shoulders (Bacaklar ve Omuzlar)</h2>
+            <p class="mb-2"><strong>Neden Birlikte Çalıştırılır?</strong> Bacaklar (quadriceps, hamstring, glute), büyük kas grubu olduğu için bağımsız bir gün alır. Omuzlar, bu güne entegre edilerek tam vücut dengesi sağlanır. PPL splitinde alt vücut ve omuz hipertrofisini optimize eder (Wernbom et al., 2007).</p>
             <p class="mb-2"><strong>Hipertrofi İçin Önem:</strong> Quadriceps, hamstring ve omuz (ön/yan/arka deltoid) için yüksek hacim, estetik ve fonksiyonel güç sağlar. FST-7 setleri, metabolik stres ve fasya esnetme ile büyümeyi tetikler (Escamilla et al., 2001).</p>
             <p class="mb-2"><strong>Yorgunluk Avantajları/Dezavantajları:</strong> <em>Avantaj:</em> Bağımsız gün, tam toparlanma sağlar (72 saat). <em>Dezavantaj:</em> Bacaklar ve omuzlar enerji yoğun, FST-7 setleri sistemik yorgunluk yaratabilir; ısınma ile azaltılır.</p>
             <p class="mb-4"><strong>Toplam Set:</strong> ~35.</p>
-            <div class="overflow-x-auto">
-                <table class="w-full text-sm text-left border border-gray-700">
-                    <thead class="table-header">
-                        <tr>
-                            <th class="px-4 py-2">Hareket</th>
-                            <th class="px-4 py-2">Kas Grubu</th>
-                            <th class="px-4 py-2">Set x Tekrar</th>
-                            <th class="px-4 py-2">Dinlenme</th>
-                            <th class="px-4 py-2">Açıklama</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">5 dk Bike</td>
-                            <td class="px-4 py-2">Isınma</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">-</td>
-                            <td class="px-4 py-2">Kan akışını artırır, yaralanma riskini azaltır.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Leg Extensions</td>
-                            <td class="px-4 py-2">Quadriceps</td>
-                            <td class="px-4 py-2">3 x 10</td>
-                            <td class="px-4 py-2">90 sn</td>
-                            <td class="px-4 py-2">Quadriceps izolasyonu, diz eklemi hazırlığı.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Front Squats</td>
-                            <td class="px-4 py-2">Quadriceps/Glute</td>
-                            <td class="px-4 py-2">3 x 10</td>
-                            <td class="px-4 py-2">120 sn</td>
-                            <td class="px-4 py-2">Ön zincir, quadriceps odaklı bileşik hareket.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Hack Squat</td>
-                            <td class="px-4 py-2">Quadriceps</td>
-                            <td class="px-4 py-2">3 x 10</td>
-                            <td class="px-4 py-2">90 sn</td>
-                            <td class="px-4 py-2">Quadriceps kütlesi için kontrollü hareket.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Leg Press (FST-7)</td>
-                            <td class="px-4 py-2">Bacak (Genel)</td>
-                            <td class="px-4 py-2">7 x 10</td>
-                            <td class="px-4 py-2">45 sn</td>
-                            <td class="px-4 py-2">Hafif kilo, yoğun kas dolgunluğu, genel bacak kütlesi.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Single Leg Curls</td>
-                            <td class="px-4 py-2">Hamstring</td>
-                            <td class="px-4 py-2">3 x 10</td>
-                            <td class="px-4 py-2">60 sn</td>
-                            <td class="px-4 py-2">Tek taraflı hamstring, imbalans önler.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Stiff-Leg Deadlifts</td>
-                            <td class="px-4 py-2">Hamstring/Glute</td>
-                            <td class="px-4 py-2">3 x 10</td>
-                            <td class="px-4 py-2">90 sn</td>
-                            <td class="px-4 py-2">Arka zincir, hamstring esnetmesi.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Lying Leg Curls (FST-7)</td>
-                            <td class="px-4 py-2">Hamstring</td>
-                            <td class="px-4 py-2">7 x 10</td>
-                            <td class="px-4 py-2">30 sn</td>
-                            <td class="px-4 py-2">Hafif kilo, yoğun kas dolgunluğu, hamstring finali.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Seated Dumbbell Press</td>
-                            <td class="px-4 py-2">Omuz (Ön/Yan)</td>
-                            <td class="px-4 py-2">4 x 10-12</td>
-                            <td class="px-4 py-2">90 sn</td>
-                            <td class="px-4 py-2">Omuz kütlesi için temel bileşik hareket.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Standing Dumbbell Side Raises</td>
-                            <td class="px-4 py-2">Omuz (Yan)</td>
-                            <td class="px-4 py-2">3 x 10-12</td>
-                            <td class="px-4 py-2">60 sn</td>
-                            <td class="px-4 py-2">Yan deltoid izolasyonu, omuz genişliği.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Behind the Back Cable Side Raises</td>
-                            <td class="px-4 py-2">Omuz (Yan/Arka)</td>
-                            <td class="px-4 py-2">3 x 10-12</td>
-                            <td class="px-4 py-2">60 sn</td>
-                            <td class="px-4 py-2">Yan ve arka deltoid geçişi, omuz dengesi.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Front Raise off Incline Bench</td>
-                            <td class="px-4 py-2">Omuz (Ön)</td>
-                            <td class="px-4 py-2">3 x 10-12</td>
-                            <td class="px-4 py-2">60 sn</td>
-                            <td class="px-4 py-2">Ön deltoid izolasyonu, estetik odak.</td>
-                        </tr>
-                        <tr class="table-row">
-                            <td class="px-4 py-2">Reverse Pec Deck Flyes (FST-7)</td>
-                            <td class="px-4 py-2">Omuz (Arka)</td>
-                            <td class="px-4 py-2">7 x 10-12</td>
-                            <td class="px-4 py-2">30 sn</td>
-                            <td class="px-4 py-2">Hafif kilo, yoğun kas dolgunluğu, omuz finali.</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="table-container">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left">
+                        <thead class="table-header">
+                            <tr>
+                                <th class="px-4 py-3">Hareket</th>
+                                <th class="px-4 py-3">Kas Grubu</th>
+                                <th class="px-4 py-3">Set x Tekrar</th>
+                                <th class="px-4 py-3">Dinlenme</th>
+                                <th class="px-4 py-3">Açıklama</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">5 dk Bike</td>
+                                <td class="px-4 py-3">Isınma</td>
+                                <td class="px-4 py-3">-</td>
+                                <td class="px-4 py-3">-</td>
+                                <td class="px-4 py-3">Kan akışını artırır, yaralanma riskini azaltır.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Leg Extensions</td>
+                                <td class="px-4 py-3">Quadriceps</td>
+                                <td class="px-4 py-3">3 x 10</td>
+                                <td class="px-4 py-3">90 sn</td>
+                                <td class="px-4 py-3">Quadriceps izolasyonu, diz eklemi hazırlığı.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Front Squats</td>
+                                <td class="px-4 py-3">Quadriceps/Glute</td>
+                                <td class="px-4 py-3">3 x 10</td>
+                                <td class="px-4 py-3">120 sn</td>
+                                <td class="px-4 py-3">Ön zincir, quadriceps odaklı bileşik hareket.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Hack Squat</td>
+                                <td class="px-4 py-3">Quadriceps</td>
+                                <td class="px-4 py-3">3 x 10</td>
+                                <td class="px-4 py-3">90 sn</td>
+                                <td class="px-4 py-3">Quadriceps kütlesi için kontrollü hareket.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Leg Press (FST-7)</td>
+                                <td class="px-4 py-3">Bacak (Genel)</td>
+                                <td class="px-4 py-3">7 x 10</td>
+                                <td class="px-4 py-3">45 sn</td>
+                                <td class="px-4 py-3">Hafif kilo, yoğun kas dolgunluğu, genel bacak kütlesi.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Single Leg Curls</td>
+                                <td class="px-4 py-3">Hamstring</td>
+                                <td class="px-4 py-3">3 x 10</td>
+                                <td class="px-4 py-3">60 sn</td>
+                                <td class="px-4 py-3">Tek taraflı hamstring, imbalans önler.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Stiff-Leg Deadlifts</td>
+                                <td class="px-4 py-3">Hamstring/Glute</td>
+                                <td class="px-4 py-3">3 x 10</td>
+                                <td class="px-4 py-3">90 sn</td>
+                                <td class="px-4 py-3">Arka zincir, hamstring esnetmesi.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Lying Leg Curls (FST-7)</td>
+                                <td class="px-4 py-3">Hamstring</td>
+                                <td class="px-4 py-3">7 x 10</td>
+                                <td class="px-4 py-3">30 sn</td>
+                                <td class="px-4 py-3">Hafif kilo, yoğun kas dolgunluğu, hamstring finali.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Seated Dumbbell Press</td>
+                                <td class="px-4 py-3">Omuz (Ön/Yan)</td>
+                                <td class="px-4 py-3">4 x 10-12</td>
+                                <td class="px-4 py-3">90 sn</td>
+                                <td class="px-4 py-3">Omuz kütlesi için temel bileşik hareket.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Standing Dumbbell Side Raises</td>
+                                <td class="px-4 py-3">Omuz (Yan)</td>
+                                <td class="px-4 py-3">3 x 10-12</td>
+                                <td class="px-4 py-3">60 sn</td>
+                                <td class="px-4 py-3">Yan deltoid izolasyonu, omuz genişliği.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Behind the Back Cable Side Raises</td>
+                                <td class="px-4 py-3">Omuz (Yan/Arka)</td>
+                                <td class="px-4 py-3">3 x 10-12</td>
+                                <td class="px-4 py-3">60 sn</td>
+                                <td class="px-4 py-3">Yan ve arka deltoid geçişi, omuz dengesi.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Front Raise off Incline Bench</td>
+                                <td class="px-4 py-3">Omuz (Ön)</td>
+                                <td class="px-4 py-3">3 x 10-12</td>
+                                <td class="px-4 py-3">60 sn</td>
+                                <td class="px-4 py-3">Ön deltoid izolasyonu, estetik odak.</td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="px-4 py-3">Reverse Pec Deck Flyes (FST-7)</td>
+                                <td class="px-4 py-3">Omuz (Arka)</td>
+                                <td class="px-4 py-3">7 x 10-12</td>
+                                <td class="px-4 py-3">30 sn</td>
+                                <td class="px-4 py-3">Hafif kilo, yoğun kas dolgunluğu, omuz finali.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
 
-        <section>
-            <h2 class="text-2xl font-semibold mb-4">Ek Öneriler</h2>
+        <section class="section-box">
+            <h2>Ek Öneriler</h2>
             <ul class="list-disc list-inside space-y-2">
                 <li><strong>Toparlanma:</strong> 4-6 haftada bir deload haftası (hafif ağırlıklar). Ağrı durumunda doktora danışın.</li>
                 <li><strong>Uyarlamalar:</strong> Ekipman eksikse alternatif hareketler (örneğin, squat yerine lunge). Kadın/erkek için aynı, bireysel güç seviyesine göre uyarlayın.</li>
